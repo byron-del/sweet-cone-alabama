@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,9 @@
             </nav>
             
             <div class="nav-icons">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i> <!-- Since it defaults to dark, the toggle points to light (sun) -->
+                </button>
                 <a href="#" class="cart-icon">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
@@ -332,7 +335,7 @@
     <section id="merch" class="merch">
         <div class="container">
             <h2 class="section-title">Sweet Swag</h2>
-            <p style="text-align: center; color: #666; max-width: 600px; margin: 0 auto;">Take a piece of Sweet Cone Alabama home with you! Order online and we'll ship it right to your door.</p>
+            <p class="merch-description" style="text-align: center; max-width: 600px; margin: 0 auto;">Take a piece of Sweet Cone Alabama home with you! Order online and we'll ship it right to your door.</p>
             
             <div class="merch-grid">
                 <div class="merch-card" data-id="m1">

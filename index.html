@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cone Alabama | Ice Cream & Sweets</title>
+    <meta name="description" content="Sweet Cone Alabama in Orange Beach, AL. Classic and creative ice cream flavors, sweets, and merchandise. Scoops of happiness in every cone!">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍦</text></svg>">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo-text">Sweet Cone <span>Alabama</span></a>
+            
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#merch">Merch</a>
+                <a href="#location">Visit Us</a>
+            </nav>
+            
+            <div class="nav-icons">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Items injected via JS -->
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Scoops of Happiness in <span>Every Cone</span></h1>
+                <p>Welcome to Sweet Cone Alabama! We serve up the finest, creamiest ice cream in Orange Beach. Treat yourself to our signature flavors and sweet merch.</p>
+                <a href="#menu" class="btn btn-primary">View Our Menu</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/strawberry-cheesecake.png" alt="Delicious ice cream cone">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-container">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+
+            <!-- Bestsellers -->
+            <h3 class="menu-subtitle">⭐ Bestsellers</h3>
+            <div class="flavor-grid">
+                <div class="flavor-card bestseller">
+                    <span class="badge">#1 Seller</span>
+                    <img src="images/bourbon-truffle.png" alt="Browned Butter Bourbon Truffle">
+                    <h3>Browned Butter Bourbon Truffle</h3>
+                    <p>Rich browned butter ice cream with swirls of bourbon caramel and chocolate truffles.</p>
+                </div>
+                <div class="flavor-card bestseller">
+                    <span class="badge">#2 Seller</span>
+                    <img src="images/cookies-cream.png" alt="Sea Salted Cookies + Cream">
+                    <h3>Sea Salted Cookies + Cream</h3>
+                    <p>Classic cookies and cream elevated with a touch of sea salt.</p>
+                </div>
+                <div class="flavor-card bestseller">
+                    <span class="badge">#3 Seller</span>
+                    <img src="images/cotton-candy.png" alt="Cotton Candy">
+                    <h3>Cotton Candy</h3>
+                    <p>Dreamy pink and blue swirled ice cream that tastes just like the carnival classic.</p>
+                </div>
+                <div class="flavor-card bestseller">
+                    <span class="badge">#4 Seller</span>
+                    <img src="images/birthday-cake.png" alt="Birthday Cake">
+                    <h3>Birthday Cake</h3>
+                    <p>Festive cake batter ice cream loaded with rainbow sprinkles and cake pieces.</p>
+                </div>
+                <div class="flavor-card bestseller">
+                    <span class="badge">#5 Seller</span>
+                    <img src="images/cookie-monster.png" alt="Caramel Cheesecake Cookie Monster">
+                    <h3>Caramel Cheesecake Cookie Monster</h3>
+                    <p>Decadent cheesecake ice cream with caramel swirl and cookie dough chunks.</p>
+                </div>
+            </div>
+
+            <!-- Fruit & Refreshing -->
+            <h3 class="menu-subtitle">🍓 Fruit & Refreshing</h3>
+            <div class="flavor-grid">
+                <div class="flavor-card">
+                    <img src="images/strawberry-cheesecake.png" alt="Strawberry Cheesecake">
+                    <h3>Strawberry Cheesecake</h3>
+                    <p>Cream cheese base swirled with strawberry compote and graham crust.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/peach-cobbler.png" alt="Peach">
+                    <h3>Peach</h3>
+                    <p>Sweet southern peaches in a creamy base.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/mint-chocolate.png" alt="Key Lime Pie">
+                    <h3>Key Lime Pie</h3>
+                    <p>Tangy key lime ice cream with graham cracker crumbles.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/vanilla.png" alt="Banana Pudding">
+                    <h3>Banana Pudding</h3>
+                    <p>Southern-style banana pudding churned into creamy frozen perfection.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/peach-cobbler.png" alt="Strawberry Fields">
+                    <h3>Strawberry Fields</h3>
+                    <p>Loaded with real strawberry chunks for a burst of berry bliss.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/strawberry-cheesecake.png" alt="Blueberry Cheesecake">
+                    <h3>Blueberry Cheesecake</h3>
+                    <p>Tangy cheesecake base folded with wild blueberry swirl.</p>
+                </div>
+            </div>
+
+            <!-- Classic & Nutty -->
+            <h3 class="menu-subtitle">🍦 Classic & Nutty</h3>
+            <div class="flavor-grid">
+                <div class="flavor-card">
+                    <img src="images/vanilla.png" alt="Old Fashioned Vanilla">
+                    <h3>Old Fashioned Vanilla</h3>
+                    <p>A true classic made with real Madagascar vanilla beans.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/pecan-praline.png" alt="Praline Pecan">
+                    <h3>Praline Pecan</h3>
+                    <p>Caramel sweet cream loaded with candied southern pecans.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/pecan-praline.png" alt="Southern Butter Pecan">
+                    <h3>Southern Butter Pecan</h3>
+                    <p>Buttery smooth ice cream with toasted pecan pieces.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/chocolate-fudge.png" alt="Award-Winning Chocolate">
+                    <h3>Award-Winning Chocolate</h3>
+                    <p>Rich, velvety milk chocolate that earned us top honors.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/chocolate-fudge.png" alt="Rocky Road">
+                    <h3>Rocky Road</h3>
+                    <p>Chocolate ice cream with marshmallows, almonds, and fudge.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/chocolate-fudge.png" alt="Chocolate Chip Cookie Dough">
+                    <h3>Chocolate Chip Cookie Dough</h3>
+                    <p>Vanilla ice cream loaded with chunks of chocolate chip cookie dough.</p>
+                </div>
+            </div>
+
+            <!-- Unique Creations -->
+            <h3 class="menu-subtitle">✨ Unique Creations</h3>
+            <div class="flavor-grid">
+                <div class="flavor-card">
+                    <img src="images/bourbon-truffle.png" alt="Salty Caramel Truffle">
+                    <h3>Salty Caramel Truffle</h3>
+                    <p>Sweet and salty caramel with rich chocolate truffle pieces.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/bourbon-truffle.png" alt="Midnight Caramel River">
+                    <h3>Midnight Caramel River</h3>
+                    <p>Dark chocolate base with ribbons of caramel flowing through.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/cookies-cream.png" alt="Cold-Brew Caramoocha">
+                    <h3>Cold-Brew Caramoocha</h3>
+                    <p>Bold cold-brew coffee ice cream with caramel and mocha swirls.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/cookies-cream.png" alt="Cappuccino Crunch">
+                    <h3>Cappuccino Crunch</h3>
+                    <p>Coffee-flavored ice cream with crunchy toffee bits.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/cookie-monster.png" alt="Camo Hero">
+                    <h3>Camo Hero</h3>
+                    <p>PB fudge tracks with graham crackers and cookie crumbles.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/cotton-candy.png" alt="Lil Blue Panda">
+                    <h3>Lil Blue Panda</h3>
+                    <p>Sugar cookie ice cream with Oreo cookie pieces.</p>
+                </div>
+            </div>
+
+            <!-- Sundaes, Shakes & Floats -->
+            <div class="menu-grid" style="margin-top: 3rem;">
+                <div class="menu-category">
+                    <h3>Signature Sundaes</h3>
+                    <div class="menu-item">
+                        <span class="menu-item-name">S'mores Sundae <span class="menu-item-desc">2 scoops Marshmallow, Hot Fudge, whipped cream, graham crumbles</span></span>
+                        <span class="menu-item-price">$9.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Oreo Overload Sundae <span class="menu-item-desc">2 scoops Oreo, Hot Fudge, whipped cream, crushed Oreos</span></span>
+                        <span class="menu-item-price">$9.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Birthday Bash Sundae <span class="menu-item-desc">2 scoops Birthday Cake, Hot Fudge, whipped cream, sprinkles, edible glitter</span></span>
+                        <span class="menu-item-price">$9.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Brownie Sundae <span class="menu-item-desc">Warm brownie, ice cream of choice, hot fudge, whipped cream</span></span>
+                        <span class="menu-item-price">$11.99</span>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>Shakes & Floats</h3>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Custom Milkshake <span class="menu-item-desc">Any 2 scoops blended with milk</span></span>
+                        <span class="menu-item-price">$8.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Classic Malt <span class="menu-item-desc">Any 2 scoops with milk & malt powder</span></span>
+                        <span class="menu-item-price">$9.99</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-name">Soda Float <span class="menu-item-desc">20oz soda (Coke/Root Beer/Sprite) with Vanilla</span></span>
+                        <span class="menu-item-price">$9.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Customization -->
+            <div class="menu-options">
+                 <h4>Cups, Cones & Toppings</h4>
+                 <div class="options-grid">
+                     <div>
+                         <strong>Scoops</strong><br>
+                         1 Scoop: $5.99 <br>
+                         2 Scoops: $8.49 <br>
+                         3 Scoops: $10.99
+                     </div>
+                     <div>
+                         <strong>Cones & Bowls</strong><br>
+                         Waffle Cone/Bowl: +$1.25 <br>
+                         Dipped in Chocolate/Sprinkles: +$3.00
+                     </div>
+                     <div>
+                         <strong>Toppings</strong><br>
+                         Extra Toppings: $0.99 <br>
+                         Wet Toppings: $1.50 <br>
+                         Edible Glitter: $0.99
+                     </div>
+                 </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweq5PbXxJk22mvE2dHnc1ZiV0kVgy3RGuBCucIOZ6AM9CjLMHfEe6hCIEZzoD3sKrExCHL-ZRllX3GNmy9qA9YnIWEPy3Ox0pvw3aYCtscOuZgYhMiq-J5sNHRUu_uHyoq96BOt5lg=s1360-w1360-h1020-rw" alt="Inside Sweet Cone Alabama - candy bar, merchandise, and seating area in Orange Beach">
+            </div>
+            <div class="about-text">
+                <h2>Our Sweet Story</h2>
+                <p>Located right in the heart of Orange Beach, Sweet Cone Alabama is your ultimate destination for frozen treats and beachside smiles.</p>
+                <p>We believe ice cream isn't just a dessert, it's an experience. That's why we craft our flavors with love, using the finest ingredients to bring you a taste of pure joy.</p>
+                <a href="#location" class="btn btn-secondary">Come Visit Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container feature-grid">
+            <div class="feature-item">
+                <i class="fas fa-ice-cream"></i>
+                <h3>Made Fresh Daily</h3>
+                <p>We churn small batches constantly for perfect texture.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-heart"></i>
+                <h3>Local Ingredients</h3>
+                <p>Supporting local dairy farmers and fruit growers.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-star"></i>
+                <h3>Premium Quality</h3>
+                <p>No artificial flavors, just real, honest ingredients.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-store"></i>
+                <h3>Family Owned</h3>
+                <p>Served with a smile by our local Orange Beach family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merch Store -->
+    <section id="merch" class="merch">
+        <div class="container">
+            <h2 class="section-title">Sweet Swag</h2>
+            <p style="text-align: center; color: #666; max-width: 600px; margin: 0 auto;">Take a piece of Sweet Cone Alabama home with you! Order online and we'll ship it right to your door.</p>
+            
+            <div class="merch-grid">
+                <div class="merch-card" data-id="m1">
+                    <img src="images/merch-tshirt.png" alt="Classic T-Shirt" class="merch-image">
+                    <div class="merch-info">
+                        <h3>Classic Logo T-Shirt</h3>
+                        <div class="merch-price">$24.99</div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="merch-card" data-id="m2">
+                    <img src="images/merch-hat.png" alt="Dad Hat" class="merch-image">
+                    <div class="merch-info">
+                        <h3>Embroidered Dad Hat</h3>
+                        <div class="merch-price">$19.99</div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="merch-card" data-id="m3">
+                    <img src="images/merch-stickers.png" alt="Sticker Pack" class="merch-image">
+                    <div class="merch-info">
+                        <h3>Sweet Sticker Pack</h3>
+                        <div class="merch-price">$6.50</div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="merch-card" data-id="m4">
+                    <img src="images/merch-tumbler.png" alt="Insulated Tumbler" class="merch-image">
+                    <div class="merch-info">
+                        <h3>Insulated Tumbler</h3>
+                        <div class="merch-price">$29.99</div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="merch-card" data-id="m5">
+                    <img src="images/merch-tote.png" alt="Canvas Tote Bag" class="merch-image">
+                    <div class="merch-info">
+                        <h3>Canvas Beach Tote</h3>
+                        <div class="merch-price">$15.00</div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>26651 Perdido Beach Blvd C<br>Orange Beach, AL 36561</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Open Daily<br>11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (251) 981-1675</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <!-- Google Maps Embed for the exact address -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.721471302521!2d-87.5684488!3d30.271424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a05b22b11efab%3A0x8898add9f6eacb45!2s26651%20Perdido%20Beach%20Blvd%20C%2C%20Orange%20Beach%2C%20AL%2036561!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">Sweet Cone <span>Alabama</span></a>
+                    <p>Scoops of happiness in every cone. Proudly serving Orange Beach.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#merch">Merch Store</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#location">Contact & Location</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Stay Sweet!</h3>
+                    <p>Join our newsletter for sweet deals and new flavor alerts.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sweet Cone Alabama. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

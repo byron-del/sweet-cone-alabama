@@ -241,15 +241,27 @@ header.scrolled .nav-links {
 .theme-toggle-btn {
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--secondary-blue);
     cursor: pointer;
     transition: var(--transition);
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    z-index: 10;
 }
 
 .theme-toggle-btn:hover {
     color: var(--primary-pink);
     transform: scale(1.1);
+}
+
+.theme-toggle-btn:active {
+    transform: scale(0.95);
 }
 
 .cart-icon {
@@ -1226,6 +1238,14 @@ footer {
 
     .mobile-menu-btn {
         display: block;
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.3rem;
     }
 
     .hero {

@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             themeIcon.classList.replace('fa-moon', 'fa-sun');
         }
 
-        themeToggleBtn.addEventListener('click', () => {
+        function toggleTheme(e) {
+            if (e) e.preventDefault();
             const currentTheme = htmlElement.getAttribute('data-theme');
             if (currentTheme === 'dark') {
                 // Switch to light
@@ -29,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('theme', 'dark');
                 themeIcon.classList.replace('fa-moon', 'fa-sun');
             }
-        });
+        }
+
+        themeToggleBtn.addEventListener('click', toggleTheme);
     }
 
     // --- Mobile Menu Toggle ---

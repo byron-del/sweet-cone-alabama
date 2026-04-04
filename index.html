@@ -6,11 +6,26 @@
     <title>Sweet Cone Alabama | Ice Cream & Sweets</title>
     <meta name="description" content="Sweet Cone Alabama in Orange Beach, AL. Classic and creative ice cream flavors, sweets, and merchandise. Scoops of happiness in every cone!">
     
+    <!-- Security: Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline';
+        font-src https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+        img-src 'self' data: https://lh3.googleusercontent.com;
+        frame-src https://www.google.com;
+        connect-src 'self';
+        base-uri 'self';
+        form-action 'self';
+    ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome for Icons (with SRI integrity check) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍦</text></svg>">
@@ -74,7 +89,7 @@
                 <a href="#menu" class="btn btn-primary">View Our Menu</a>
             </div>
             <div class="hero-image">
-                <img src="images/strawberry-cheesecake.png" alt="Delicious ice cream cone">
+                <img src="images/strawberry-cheesecake.webp" alt="Delicious ice cream cone">
             </div>
         </div>
     </section>
@@ -89,31 +104,31 @@
             <div class="flavor-grid">
                 <div class="flavor-card bestseller">
                     <span class="badge">#1 Seller</span>
-                    <img src="images/bourbon-truffle.png" alt="Browned Butter Bourbon Truffle">
+                    <img src="images/bourbon-truffle.webp" alt="Browned Butter Bourbon Truffle">
                     <h3>Browned Butter Bourbon Truffle</h3>
                     <p>Rich browned butter ice cream with swirls of bourbon caramel and chocolate truffles.</p>
                 </div>
                 <div class="flavor-card bestseller">
                     <span class="badge">#2 Seller</span>
-                    <img src="images/cookies-cream.png" alt="Sea Salted Cookies + Cream">
+                    <img src="images/cookies-cream.webp" alt="Sea Salted Cookies + Cream">
                     <h3>Sea Salted Cookies + Cream</h3>
                     <p>Classic cookies and cream elevated with a touch of sea salt.</p>
                 </div>
                 <div class="flavor-card bestseller">
                     <span class="badge">#3 Seller</span>
-                    <img src="images/cotton-candy.png" alt="Cotton Candy">
+                    <img src="images/cotton-candy.webp" alt="Cotton Candy">
                     <h3>Cotton Candy</h3>
                     <p>Dreamy pink and blue swirled ice cream that tastes just like the carnival classic.</p>
                 </div>
                 <div class="flavor-card bestseller">
                     <span class="badge">#4 Seller</span>
-                    <img src="images/birthday-cake.png" alt="Birthday Cake">
+                    <img src="images/birthday-cake.webp" alt="Birthday Cake">
                     <h3>Birthday Cake</h3>
                     <p>Festive cake batter ice cream loaded with rainbow sprinkles and cake pieces.</p>
                 </div>
                 <div class="flavor-card bestseller">
                     <span class="badge">#5 Seller</span>
-                    <img src="images/cookie-monster.png" alt="Caramel Cheesecake Cookie Monster">
+                    <img src="images/cookie-monster.webp" alt="Caramel Cheesecake Cookie Monster">
                     <h3>Caramel Cheesecake Cookie Monster</h3>
                     <p>Decadent cheesecake ice cream with caramel swirl and cookie dough chunks.</p>
                 </div>
@@ -123,32 +138,32 @@
             <h3 class="menu-subtitle">🍓 Fruit & Refreshing</h3>
             <div class="flavor-grid">
                 <div class="flavor-card">
-                    <img src="images/strawberry-cheesecake.png" alt="Strawberry Cheesecake">
+                    <img src="images/strawberry-cheesecake.webp" alt="Strawberry Cheesecake">
                     <h3>Strawberry Cheesecake</h3>
                     <p>Cream cheese base swirled with strawberry compote and graham crust.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/peach-cobbler.png" alt="Peach">
+                    <img src="images/peach-cobbler.webp" alt="Peach">
                     <h3>Peach</h3>
                     <p>Sweet southern peaches in a creamy base.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/mint-chocolate.png" alt="Key Lime Pie">
+                    <img src="images/mint-chocolate.webp" alt="Key Lime Pie">
                     <h3>Key Lime Pie</h3>
                     <p>Tangy key lime ice cream with graham cracker crumbles.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/vanilla.png" alt="Banana Pudding">
+                    <img src="images/vanilla.webp" alt="Banana Pudding">
                     <h3>Banana Pudding</h3>
                     <p>Southern-style banana pudding churned into creamy frozen perfection.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/peach-cobbler.png" alt="Strawberry Fields">
+                    <img src="images/peach-cobbler.webp" alt="Strawberry Fields">
                     <h3>Strawberry Fields</h3>
                     <p>Loaded with real strawberry chunks for a burst of berry bliss.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/strawberry-cheesecake.png" alt="Blueberry Cheesecake">
+                    <img src="images/strawberry-cheesecake.webp" alt="Blueberry Cheesecake">
                     <h3>Blueberry Cheesecake</h3>
                     <p>Tangy cheesecake base folded with wild blueberry swirl.</p>
                 </div>
@@ -158,32 +173,32 @@
             <h3 class="menu-subtitle">🍦 Classic & Nutty</h3>
             <div class="flavor-grid">
                 <div class="flavor-card">
-                    <img src="images/vanilla.png" alt="Old Fashioned Vanilla">
+                    <img src="images/vanilla.webp" alt="Old Fashioned Vanilla">
                     <h3>Old Fashioned Vanilla</h3>
                     <p>A true classic made with real Madagascar vanilla beans.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/pecan-praline.png" alt="Praline Pecan">
+                    <img src="images/pecan-praline.webp" alt="Praline Pecan">
                     <h3>Praline Pecan</h3>
                     <p>Caramel sweet cream loaded with candied southern pecans.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/pecan-praline.png" alt="Southern Butter Pecan">
+                    <img src="images/pecan-praline.webp" alt="Southern Butter Pecan">
                     <h3>Southern Butter Pecan</h3>
                     <p>Buttery smooth ice cream with toasted pecan pieces.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/chocolate-fudge.png" alt="Award-Winning Chocolate">
+                    <img src="images/chocolate-fudge.webp" alt="Award-Winning Chocolate">
                     <h3>Award-Winning Chocolate</h3>
                     <p>Rich, velvety milk chocolate that earned us top honors.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/chocolate-fudge.png" alt="Rocky Road">
+                    <img src="images/chocolate-fudge.webp" alt="Rocky Road">
                     <h3>Rocky Road</h3>
                     <p>Chocolate ice cream with marshmallows, almonds, and fudge.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/chocolate-fudge.png" alt="Chocolate Chip Cookie Dough">
+                    <img src="images/chocolate-fudge.webp" alt="Chocolate Chip Cookie Dough">
                     <h3>Chocolate Chip Cookie Dough</h3>
                     <p>Vanilla ice cream loaded with chunks of chocolate chip cookie dough.</p>
                 </div>
@@ -193,32 +208,32 @@
             <h3 class="menu-subtitle">✨ Unique Creations</h3>
             <div class="flavor-grid">
                 <div class="flavor-card">
-                    <img src="images/bourbon-truffle.png" alt="Salty Caramel Truffle">
+                    <img src="images/bourbon-truffle.webp" alt="Salty Caramel Truffle">
                     <h3>Salty Caramel Truffle</h3>
                     <p>Sweet and salty caramel with rich chocolate truffle pieces.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/bourbon-truffle.png" alt="Midnight Caramel River">
+                    <img src="images/bourbon-truffle.webp" alt="Midnight Caramel River">
                     <h3>Midnight Caramel River</h3>
                     <p>Dark chocolate base with ribbons of caramel flowing through.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/cookies-cream.png" alt="Cold-Brew Caramoocha">
+                    <img src="images/cookies-cream.webp" alt="Cold-Brew Caramoocha">
                     <h3>Cold-Brew Caramoocha</h3>
                     <p>Bold cold-brew coffee ice cream with caramel and mocha swirls.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/cookies-cream.png" alt="Cappuccino Crunch">
+                    <img src="images/cookies-cream.webp" alt="Cappuccino Crunch">
                     <h3>Cappuccino Crunch</h3>
                     <p>Coffee-flavored ice cream with crunchy toffee bits.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/cookie-monster.png" alt="Camo Hero">
+                    <img src="images/cookie-monster.webp" alt="Camo Hero">
                     <h3>Camo Hero</h3>
                     <p>PB fudge tracks with graham crackers and cookie crumbles.</p>
                 </div>
                 <div class="flavor-card">
-                    <img src="images/cotton-candy.png" alt="Lil Blue Panda">
+                    <img src="images/cotton-candy.webp" alt="Lil Blue Panda">
                     <h3>Lil Blue Panda</h3>
                     <p>Sugar cookie ice cream with Oreo cookie pieces.</p>
                 </div>
@@ -340,45 +355,45 @@
             <!-- STATIC MOCKUP SHOWCASE (Linked to Printify) -->
             <div class="merch-grid" id="static-merch-showcase">
                 <div class="merch-card">
-                    <img src="images/influencer_shirt.png" alt="Aesthetic T-Shirt" class="merch-image">
+                    <img src="images/influencer_shirt.webp" alt="Aesthetic T-Shirt" class="merch-image">
                     <div class="merch-info">
                         <h3>'Stay Sweet' Boyfriend Tee</h3>
                         <div class="merch-price">$24.99</div>
-                        <a href="https://sweetconeswag.printful.me/" target="_blank" class="btn btn-primary">Shop Now</a>
+                        <a href="https://sweetconeswag.printful.me/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
                 
                 <div class="merch-card">
-                    <img src="images/influencer_hat.png" alt="Dad Hat" class="merch-image">
+                    <img src="images/influencer_hat.webp" alt="Dad Hat" class="merch-image">
                     <div class="merch-info">
                         <h3>Minimalist Pastel Dad Hat</h3>
                         <div class="merch-price">$22.00</div>
-                        <a href="https://sweetconeswag.printful.me/" target="_blank" class="btn btn-primary">Shop Now</a>
+                        <a href="https://sweetconeswag.printful.me/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
                 
                 <div class="merch-card">
-                    <img src="images/influencer_stickers.png" alt="Sticker Pack" class="merch-image">
+                    <img src="images/influencer_stickers.webp" alt="Sticker Pack" class="merch-image">
                     <div class="merch-info">
                         <h3>Scoops of Happiness Stickers</h3>
                         <div class="merch-price">$8.50</div>
-                        <a href="https://sweetconeswag.printful.me/" target="_blank" class="btn btn-primary">Shop Now</a>
+                        <a href="https://sweetconeswag.printful.me/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
                 
                 <div class="merch-card">
-                    <img src="images/influencer_tote.png" alt="Canvas Tote Bag" class="merch-image">
+                    <img src="images/influencer_tote.webp" alt="Canvas Tote Bag" class="merch-image">
                     <div class="merch-info">
                         <h3>'Scoops of Joy' Canvas Tote</h3>
                         <div class="merch-price">$18.00</div>
-                        <a href="https://sweetconeswag.printful.me/" target="_blank" class="btn btn-primary">Shop Now</a>
+                        <a href="https://sweetconeswag.printful.me/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Shop Now</a>
                     </div>
                 </div>
             </div>
 
             <!-- Link to full store -->
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="https://sweetconeswag.printful.me/" target="_blank" class="btn btn-secondary" style="font-size: 1.1rem; padding: 1rem 2rem;">Shop All Sweet Swag</a>
+                <a href="https://sweetconeswag.printful.me/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 1.1rem; padding: 1rem 2rem;">Shop All Sweet Swag</a>
             </div>
         </div>
     </section>
@@ -417,7 +432,7 @@
                 
                 <div class="location-map">
                     <!-- Google Maps Embed for the exact address -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.721471302521!2d-87.5684488!3d30.271424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a05b22b11efab%3A0x8898add9f6eacb45!2s26651%20Perdido%20Beach%20Blvd%20C%2C%20Orange%20Beach%2C%20AL%2036561!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.721471302521!2d-87.5684488!3d30.271424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a05b22b11efab%3A0x8898add9f6eacb45!2s26651%20Perdido%20Beach%20Blvd%20C%2C%20Orange%20Beach%2C%20AL%2036561!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
                 </div>
             </div>
         </div>
@@ -451,8 +466,8 @@
                 <div class="footer-col">
                     <h3>Stay Sweet!</h3>
                     <p>Join our newsletter for sweet deals and new flavor alerts.</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
-                        <input type="email" placeholder="Your email address" required>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required autocomplete="email" maxlength="254">
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -460,9 +475,21 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2026 Sweet Cone Alabama. All Rights Reserved.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem;"><a href="#" id="privacy-link" style="color: #aaa; text-decoration: underline;">Privacy Policy</a> · <a href="#" id="terms-link" style="color: #aaa; text-decoration: underline;">Terms of Service</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent" style="display:none;">
+        <div class="cookie-consent-inner">
+            <p>We use cookies to remember your preferences (like theme choice). By continuing to use this site, you consent to our use of cookies.</p>
+            <div class="cookie-consent-actions">
+                <button id="cookie-accept" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Accept</button>
+                <button id="cookie-decline" class="btn btn-secondary" style="padding: 8px 20px; font-size: 0.9rem;">Decline</button>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>

@@ -6,3 +6,6 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Dependencies
+node_modules/

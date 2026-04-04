@@ -270,6 +270,7 @@ header.scrolled .nav-links {
     font-size: 1.2rem;
     color: var(--secondary-blue);
     transition: var(--transition);
+    margin-right: 6px;
 }
 
 .cart-icon:hover {
@@ -1241,7 +1242,7 @@ footer {
     }
 
     .nav-icons {
-        gap: 10px;
+        gap: 18px;
     }
 
     .theme-toggle-btn {
@@ -1283,4 +1284,53 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
+}
+
+/* --- Cookie Consent Banner --- */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 28, 36, 0.97);
+    color: #F0F0F5;
+    z-index: 2000;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-consent-inner {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cookie-consent-inner p {
+    font-size: 0.9rem;
+    color: #B0B5C0;
+    margin: 0;
+    flex: 1;
+    min-width: 250px;
+}
+
+.cookie-consent-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+[data-theme="light"] .cookie-consent {
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .cookie-consent-inner p {
+    color: #555;
 }
